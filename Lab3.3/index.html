@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <script>
+
+
+
+    function calend(date = String) {
+      document.getElementById("calendTable").innerHTML = calendarWithDateStr(date);
+    }
+
+    window.onload = function () {
+      document.getElementById("multTable").innerHTML = multiplyTable();
+      document.getElementById("calendTable").innerHTML = calendarWithDateNow();
+      var myVar = setInterval(function () {
+        myTimer();
+      }, 250);
+    };
+
+  </script>
+
+  <title>Lab3.2</title>
+</head>
+
+<body>
+  <div id="logo">
+    <h1>Lab 3.3 Сайт каршерінгу</h1>
+  </div>
+
+  <div style="float: left;">
+    <div id="clock"></div>
+  </div>
+
+
+
+  <div style="clear: both; margin: 0 auto 0 auto; display:flex; width: 50%;">
+    <div id="multTable"></div>
+  </div>
+  <div style="clear: both; margin: 100px auto 100px auto; display:flex; width: 50%;">
+    <div>
+      <input type="date" id="changeDateCalendar" onchange="calend(document.getElementById('changeDateCalendar').value)">
+      <div>
+        <div id="calendTable"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="clear: both; margin: 100px auto 100px auto; display:flex; width: 50%;">
+    <input type="date" id="bdaymonth" onchange="daysCount(document.getElementById('bdaymonth').value, 6)">
+    <div id="daysCount"></div>
+  </div>
+
+  <div style="clear: both; margin: 100px auto 20px auto; display:flex; width: 50%;">
+    <div style="float: left; ">
+      <input type="text" placeholder="Межа А" id="borA">
+      <input type="text" placeholder="Межа Б" id="borB">
+      <input type="text" placeholder="Крок" id="h">
+      <input type="text" placeholder="Вираз" id="expression">
+    </div>
+
+  </div>
+
+  <div style="clear: both; margin: 20px auto 20px auto; display:flex; width: 50%;">
+    <div style="float: left; width: 50%;">
+      
+      <button class="btn1" id="expression" onclick="tabulationTable()">Розрахувати</button>
+    </div>
+  </div>
+
+
+
+
+  <div style="clear: both; margin: 30px auto 100px auto; display:flex; width: 50%;">
+    <div>
+      <div id="tabulationTable"></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

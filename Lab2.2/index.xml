@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!DOCTYPE root [
+    <!ELEMENT root (logo,table-header, table)>
+    <!ELEMENT logo (logo-text)>
+    <!ELEMENT logo-text (#PCDATA)>
+
+
+    <!ELEMENT table (row*)>
+    <!ELEMENT table-header (#PCDATA)>
+
+    <!ELEMENT row (price-row, price-row, price-row)>
+    <!ATTLIST row id ID #REQUIRED>
+
+    <!ELEMENT price-row (row-name, row-value)>
+
+    <!ELEMENT row-name (#PCDATA)*>
+    <!ELEMENT row-value (#PCDATA)*>
+
+    <!ENTITY name "ФІО">
+    <!ENTITY sex "Стать">
+    <!ENTITY group "Група">
+]>
+
+<root>
+    <logo>
+        <logo-text>Lab 2.2 Сайт каршерінгу</logo-text>
+    </logo>
+
+    <table-header>Дані про діючих студентів університету</table-header>
+
+    <table>
+
+            <row id="r1">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент перший</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ч</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФКПІ</row-value>
+                    </price-row>
+            </row>
+
+            <row id="r2">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент другий</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ж</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФЕБІТ</row-value>
+                    </price-row>
+            </row>
+
+            <row id="r3">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент третій</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ч</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФКНТ</row-value>
+                    </price-row>
+            </row>
+
+            <row id="r4">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент четвертий</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ч</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФКНТ</row-value>
+                    </price-row>
+            </row>
+
+            <row id="r5">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент п'ятий</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ч</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФКПІ</row-value>
+                    </price-row>
+            </row>
+
+            <row id="r6">
+                    <price-row>
+                        <row-name>&name;:</row-name>
+                        <row-value>Студент шостий</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&sex;:</row-name>
+                        <row-value>Ж</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>&group;:</row-name>
+                        <row-value>ФАЕТ</row-value>
+                    </price-row>
+            </row>
+            
+
+
+
+    </table>
+</root>

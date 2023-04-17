@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #292929;
+}
+
+  
+div#logo{
+    background-image: url('../img/nau_logo.jpg');
+    height: 80px;
+    text-align: center;
+    border: #111;
+    border-width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+div#logo h1{
+    margin-left: 50px;
+    text-align: left;
+    line-height: 65px;
+}
+
+p {
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+li {
+    padding-right: 1px;
+    line-height: 1.2;
+}
+
+h3 {
+    padding: 5px 20px;
+    margin: 0;
+}
+
+div#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #147FA9;
+}
+
+div#header li a:hover {
+    background-color:#42444e;
+}
+
+div#header li a {
+    display: inline-table;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: verdana;
+}
+
+
+div#header li#profile_li {
+    float:right;
+}
+
+div#header li {
+    float: left;
+}
+
+div#header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+    background: #e0e0e0;
+    color: #292929;
+}
+
+
+
+div#profile {
+    border: 3px;
+    border: #292929;
+    text-align: center;
+    float: left;
+    background: #147FA9;
+}
+
+
+div#navigation {
+    background: #e0e0e0;
+    height: 1280px;
+}
+
+div#navigation h2 {
+    padding: 10px;
+}
+
+div#navigation li {
+    padding: 3px;
+    font-size: 16px;
+}
+
+div#navigation {
+    float: left;
+    width: 200px;
+    font-family: "Lucida Sans Unicode";
+}
+
+div#extra {
+    background: #147FA9;
+}
+
+div#footer {
+    background: #42444e;
+    color: #fff;
+    height: 60px;
+}
+
+div#footer p {
+    padding: 20px 10px;
+}
+
+div#wrapper {
+    float: left;
+    width: 80%;
+    margin-left: -190px;
+}
+
+div#content {
+    margin-left: 200px;
+    font-family: Verdana;
+}
+
+div#footer {
+    clear: both;
+    width: 100%;
+
+    background: #147FA9;
+    color: #fff;
+    height: 60px;
+}

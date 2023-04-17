@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <script>
+
+    var gifArray = [];
+    for (var i = 0; i < 21; i++) {
+      if (i < 10) {
+        gifArray[i] = '../img/gif/frame_0' + i + '_delay-0.05s.jpg';
+      }
+      else {
+        gifArray[i] = '../img/gif/frame_' + i + '_delay-0.05s.jpg';
+      }
+    }
+
+
+
+    window.onload = function () {
+      runningLine();
+      runningLine2();
+      startGif(150);
+
+      var myVar = setInterval(function () {
+        startRunning(document.getElementById('running'))
+      }, 1);
+    };
+
+  </script>
+
+  <title>Lab3.4</title>
+</head>
+
+<body>
+  <div id="logo">
+    <h1>Lab 3.4 Сайт каршерінгу</h1>
+  </div>
+
+  <div style="float: left;">
+    <div id="running">бумс-бумс-бумс</div>
+  </div>
+
+
+
+  <div style="clear: both; margin: 0 auto 0 auto; display:flex; width: 50%;">
+    <span id='move-me-1' style='position: relative; border: 1px dashed white; z-index: 1;'>Я рухаюся!</span>
+  </div>
+
+  <div style="clear: both; margin: 20px auto 0 auto; display:flex; width: 50%;">
+    <div style='text-align: center;'>
+      <h3>Слайд-шоу</h3>
+      <img id='slide' src='../img/gif/frame_00_delay-0.1s.jpg' alt='фотографія' />
+    </div>
+  </div>
+
+
+  <div style="clear: both; margin: 20px auto 0 auto; display:flex;position: relative; width: 12%;">
+    <span id='move-me-2' style='position: absolute ; border: 1px dashed white; z-index: 1;'>Рядок, що
+      рухається!</span>
+  </div>
+
+
+
+  <div id='shapesAnimatiom'
+    style="clear: both; margin: 60px auto 0 auto; display:flex; position: relative; width: 600px; height: 300px; background-color: lightgray;">
+    <div>
+      <img id='triangle' src='../img/triangle.png' alt='фотографія' style="position: absolute; bottom: 0; left: 0;" />
+      <img id='rectangle' src='../img/rectangle.png' alt='фотографія'
+        style="position: absolute; top: 35%; left: 30%;" />
+      <img id='circle' src='../img/circle.png' alt='фотографія'
+        style="position: absolute;margin: 200px 0 0 0;display: none;" />
+    </div>
+    <label style="position: absolute;bottom: -20px; left: 0; ">Малюнок</label>
+  </div>
+
+
+
+
+  <div style="clear: both; margin: 5px auto 20px auto; display:flex; width: 50%;">
+    <button class="btn1" id="expression" onclick="startAnimation()">Почати</button>
+  </div>
+
+  <div style="clear: both; margin: 20px auto 200px auto; display:flex; width: 50%;"></div>
+
+</body>
+
+</html>

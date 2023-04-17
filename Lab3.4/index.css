@@ -1,0 +1,121 @@
+div#logo {
+    background-image: url('../img/nau_logo.jpg');
+    height: 100px;
+    text-align: center;
+    border: #111;
+    border-width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+div#logo h1 {
+    margin-left: 50px;
+    text-align: left;
+    line-height: 65px;
+}
+
+.btn {
+    height: 50px;
+    width: 125px;
+    float: left;
+    margin: 25px 0 25px 25px;
+}
+
+.btn1 {
+    height: 50px;
+    width: 125px;
+    margin: 25px 0 25px 25px;
+}
+
+
+#multipTable {
+    border: 4px solid red;
+    background-color: #1ff117;
+    font-size: 18px;
+    border-spacing: 10px;
+}
+
+#multipTable th,
+#multipTable td {
+    text-align: center;
+    /* border: 4px solid #1ff117; */
+    padding: 13px;
+    border-radius: 50%;
+    background-color: #ffffcc;
+}
+
+#multipTable tr {
+    margin: 5px;
+}
+
+#multipTable tr :hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+
+
+
+#calendar {
+    font-size: 20px;
+    text-align: center;
+}
+
+#calendar td {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#calendar th {
+    background-color: #555555;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#calendar tr {
+    transition: 3s ease;    
+}
+
+#calendar .allocated {
+    color: white;
+    background-color: #3200bb;
+}
+
+#calendar .notInCurrentMount {
+    background-color: #d3d3d3;
+    color: #555555;
+}
+
+#calendar .today {
+    color: white;
+    background-color: #bb0000;
+}
+
+#calendar .holiday {
+    color: red;
+}
+
+#calendar tr :hover {
+    background-color: #555555;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+#tabulationTable {
+    text-align: center;
+    font-size: 18px;
+    border-spacing: 10px;
+}
+
+#tabulationTable td{
+    text-align: center;
+    padding: 10px;
+}
+
+#tabulationTable #selected {
+    background-color: purple;
+    color: #ffffff;
+}

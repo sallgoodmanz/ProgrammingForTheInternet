@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;    
+    text-align: justify;
+}
+
+div#logo{
+    background-image: url('../img/nau_logo.jpg');
+    height: 100px;
+    text-align: center;
+    border: #111;
+    border-width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+div#logo h1{
+  margin-left: 50px;
+  text-align: left;
+  line-height: 65px;
+  }
+
+div#footer {
+    clear: both;
+    width: 100%;
+
+    background: brown;
+    color: #fff;
+    height: 60px;
+}
+
+div#footer p {
+    padding: 20px 10px;
+}
+
+
+.content {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+
+
+
+article {
+    column-count: 3;
+    column-width: 10px;
+    column-gap: 40px;
+    column-width: 200px;
+    column-rule: 1px solid lightblue;
+    margin: 50px 0 0 0;
+  }
+
+  article h2 {
+    font-size: 1.2rem;
+    color: red;
+    letter-spacing: 1px;
+  }
+
+  article p {
+    line-height: 1.5;
+    break-after: column;
+  }
+
+
+  row-prices {
+    margin: 50px 0 150px 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  [class*="price-col"]{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    transition: all 0.3s;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  [class*="price-col"]:hover {
+    transform: translateY(-15px);
+    opacity: 0.9;
+  }
+
+  .price-col-1{
+    background-color: #ee2c76;
+  }
+
+  .price-col-2{
+    background-color: #ee532c;
+  }
+
+  .price-col-3{
+    background-color: #ee2c2c;
+  }
+
+  .price-top{
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    height: 220px;
+  }
+  
+  .price-bottom{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+  }
+
+
+  [class*="price_l"]{
+    display: block;
+  }
+
+  [class*="price_"]{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 20px 0 10px 0;
+  }
+
+  .price_coast{
+    font-size: 24px;
+  }
+  .price_l_description{
+    margin: 20px 0 40px 0;
+    font-size: 16px;
+  }
+
+
+
+  [class*="row-"]{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 10px 0;
+  }
+  .row-name{
+    width: 55%;
+  }
+  .row-value{
+    width: 35%;
+    font-size: 14px;
+  }
+
+
+
+
+  [class*="automobile-col"]{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    transition: all 0.3s;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  [class*="automobile-col"]:hover {
+    transform:scale(1.1);
+    opacity: 0.95;
+  }
+
+  .automobile-top img{
+    border-radius: 15px 15px 0 0;
+    width: 300px;
+    height: 220px;
+  }
+
+  
+  .automobile-bottom{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+  }
+
+
+
+
+  .automobile-row-name{
+    width: 100%;
+  }
+  .row-value{
+    width: 35%;
+    font-size: 14px;
+  }

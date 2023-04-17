@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Lab 1.4 Каршерінг</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../Lab1.3/index.css">
+</head>
+
+<body>
+  <div id="logo">
+    <h1>Lab 1.4 Сайт каршерінгу</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="login-container">
+      <form action="#">
+        <div class="row">
+          <h2 style="text-align:center">Увійдіть за допомогою</h2>
+          <div class="vl">
+            <span class="vl-innertext">Або</span>
+          </div>
+
+          <div class="col">
+            <h3 style="text-align:center">Соціальних Мереж</h3>
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Увійти через Facebook
+            </a>
+            <a href="#" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Увійти через Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Увійти через Google
+            </a>
+          </div>
+
+          <div class="col">
+            <h3 style="text-align:center">Вручну</h3>
+            <input type="text" name="login" placeholder="Логін" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Увійти">
+          </div>
+
+        </div>
+      </form>
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="#" style="color:white" class="btn">Зареєструватися</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white" class="btn">Забули пароль?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content-lab3"> 
+      <article>
+        <H2>Твоє власне авто на час оренди</H2>
+        <p>
+          Тільки ти керуєш автомобілем, музикою та кліматом в авто.
+          Візьми машину на кілька хвилин, годин або діб. За пальне, мийку і парковку містом платити НЕ потрібно!
+        </p>
+
+        <H2>Як таксі, тільки дешевше</H2>
+        <p>
+          В таксі назвали зависоку ціну чи підвищили прайс на свята?
+          У нас завжди стабільна ціна, незалежно від зайнятості авто і погоди.
+          Ми дешевше за таксі, мінімум на 20-30%. Не слухай історії таксистів про їх життя і політику.
+        </p>
+
+        <H2>Просто покататися</H2>
+        <p>
+          Підвезти маму, покатати дівчину чи хлопця, покататися самому, швидко вирішити свої питання – орендуй
+          автомобіль всього на кілька хвилин або годин.
+          Не плати за цілу добу, пальне і мийку – все це в минулому.
+        </p>
+      </article>
+
+      <row-prices>
+        <div class="price-col-1">
+          <div class="price-top">
+            <span class="price_l_name">Хвилина + 9 грн/км</span>
+            <span class="price_coast">1.35 - 2.2</span>
+            <span class="price_coast_description">₴/хв</span>
+            <span class="price_l_description">Найкраще підходить для коротких поїздок, менше однієї години</span>
+          </div>
+          <div class="price-bottom">
+            <div class="price-row">
+              <span class="row-name">Включений пробіг</span>
+              <span class="row-value">0 км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Бронювання</span>
+              <span class="row-value">0 ₴/20хв</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Очікування</span>
+              <span class="row-value">1 ₴</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Понад пробігу</span>
+              <span class="row-value">9 ₴/за кожний км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Супер страховка</span>
+              <span class="row-value">0.8 ₴</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-col-2">
+          <div class="price-top">
+            <span class="price_l_name">Година + 10 км</span>
+            <span class="price_coast">140 - 175</span>
+            <span class="price_coast_description">₴/хв</span>
+            <span class="price_l_description">
+              Тариф для поїздок містом на декілька годин, відмінно використати при першому знайомстві
+              з послугою
+            </span>
+          </div>
+          <div class="price-bottom">
+            <div class="price-row">
+              <span class="row-name">Включений пробіг</span>
+              <span class="row-value">10 км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Бронювання</span>
+              <span class="row-value">0 ₴/20хв</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Очікування</span>
+              <span class="row-value">0 ₴</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Понад пробігу</span>
+              <span class="row-value">9 ₴/за кожний км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Супер страховка</span>
+              <span class="row-value">25 - 30 ₴</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-col-3">
+          <div class="price-top">
+            <span class="price_l_name">Добовий + 100 км</span>
+            <span class="price_coast">1350 - 1650 ₴</span>
+            <span class="price_coast_description">₴/хв</span>
+            <span class="price_l_description">
+              Для комфортної оренди авто на 24 години, чи на довший період
+            </span>
+          </div>
+          <div class="price-bottom">
+            <div class="price-row">
+              <span class="row-name">Включений пробіг</span>
+              <span class="row-value">100 км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Бронювання</span>
+              <span class="row-value">0 ₴/20хв</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Очікування</span>
+              <span class="row-value">0 ₴</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Понад пробігу</span>
+              <span class="row-value">9 ₴/за кожний км</span>
+            </div>
+            <div class="price-row">
+              <span class="row-name">Супер страховка</span>
+              <span class="row-value">200 - 300 ₴</span>
+            </div>
+          </div>
+        </div>
+
+        </row-price>
+    </div>
+
+    <div class="questions">
+      <form method="post" action="#">
+          <ul>
+              <H2>Контрольні питання</H2>
+              <li>
+                  <span>
+                      Що розумiють пiд формою?
+                  </span>
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="1" name="1" value="1">
+                          <label for="1">Форма HTML використовується для збору даних, введених користувачем.<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="2" name="1" value="2">
+                          <label for="2">Створює поле для введення декількох рядків тексту.<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="3" name="1" value="3">
+                          <label for="3">Визначає один із типів пунктів меню.<br></label><br>
+                      </div>
+                  </div>
+              </li>
+  
+              <li>
+                  <span>
+                    Яку кількість HTML таблиць може містити документ? 
+                  </span>
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="1.1" name="1.1" value="1">
+                          <label for="1.1">1. Документ може мати довільне число таблиць.<br></label><br>
+                      </div>
+                      <div class="question">
+                          <input type="radio" id="1.2" name="1.1" value="2">
+                          <label for="1.2">2. Залежить від конфігкрації IDE.<br></label><br>
+                      </div>
+                      <div class="question">
+                          <input type="radio" id="1.3" name="1.1" value="3">
+                          <label for="1.3">3. Вказано в резолюції HTML від 19.11.2001.<br></label><br>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <span>
+                    Які атрибути використовують для правильного розташування таблиці по відношенню до ii полів?
+                  </span>
+  
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="5" name="2" value="1">
+                          <label for="5">ALIGN (LEFT, CENTER, RIGHT).<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="6" name="2" value="2">
+                          <label for="6">LEFT, CENTER, RIGHT<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="7" name="2" value="3">
+                          <label for="7">TARGET (LEFT, CENTER, RIGHT)<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="8" name="2" value="4">
+                          <label for="8">ALIGN-METHOD (LEFT, CENTER, RIGHT)<br></label><br>
+                      </div>
+  
+                  </div>
+              </li>
+              <li>
+                  <span>
+                    Що таке гіперпосилання? Як вставити його в HTML-документ?
+                  </span>
+  
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="9" name="3" value="1">
+                          <label for="9">Гіперпосилання - фрагмент тексту, який є покажчиком на інший файл або об’єкт.<br></label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="10" name="3" value="2">
+                          <label for="10">Фрагмент тексту одного документа, всередині другого.<br></label><br>
+                      </div>
+  
+                      
+                  </div>
+              </li>
+              <li>
+                  <span>
+                      Яке призначення параметра VALUE i змiст його значень?
+                  </span>
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="13" name="4" value="1">
+                          <label for="13">
+                              Відповіді 2 та 3.<br>
+                          </label>
+                      </div>
+                      <div class="question">
+                          <input type="radio" id="14" name="4" value="2">
+                          <label for="14">
+                              VALUE - Задає значення пункту, яке буде використано разом з іншими відомостями
+                              про вміст заповненої форми.<br>
+                          </label><br>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="15" name="4" value="3">
+                          <label for="15">
+                              VALUE - змінює напис на кнопці, зміст якої, задане за умовчанням.<br>
+                          </label><br>
+                      </div>
+  
+                  </div>
+              </li>
+              <li>
+                  <span>
+                      Яким чином можна визначити максимальну кiлькiсть
+                      символiв, якi можна ввести в текстовому полi?
+                  </span>
+  
+                  <div class="polaroid">
+                      <div class="question">
+                          <input type="radio" id="17" name="5" value="1">
+                          <label for="17">
+                              MAXLENGTH - визначає кількість символів,
+                              які можна ввести в текстовому полі.<br>
+                          </label>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="18" name="5" value="2">
+                          <label for="18">
+                              SIZE - визначає розмір поля в символах.<br>
+                          </label>
+                      </div>
+  
+                      <div class="question">
+                          <input type="radio" id="19" name="5" value="3">
+                          <label for="19">
+                              LENGTH - визначає максимальну кількість символів,
+                              які можна ввести в текстовому полі.<br>
+                          </label>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <button type="submit" class="btn">Надати відповідь</button>
+      </form>
+  </div>
+
+  </div>
+
+
+  
+
+
+  <div id="footer">
+    <p></p>
+  </div>
+</body>
+
+</html>

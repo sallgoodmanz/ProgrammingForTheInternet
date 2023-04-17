@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+div#logo {
+  background-image: url('../img/nau_logo.jpg');
+  height: 100px;
+  text-align: center;
+  border: #111;
+  border-width: 10px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+}
+
+
+
+div#footer {
+  clear: both;
+  width: 100%;
+
+  background: brown;
+  color: #fff;
+  height: 60px;
+}
+
+div#footer p {
+  padding: 20px 10px;
+}
+
+
+.wrapper {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  position: relative;
+  border-radius: 5px;
+
+  padding: 20px 0 0 0;
+  margin: 50px 0 50px 0;
+  /* width: 50%; */
+  color: white;
+
+  background-image: url("../img/lozpdg5z377966.jpg");
+  background-size: cover;
+}
+
+/* style inputs and link buttons */
+.login-container input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  color: #111;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 205px;
+  margin: 20px 0 0px 0;
+}
+
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  margin-top: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+  /*                 */
+ /* questions style */
+/*                 */
+.questions{
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  transition: .9s ease;
+  word-break:keep-all;
+  text-align: justify;
+}
+
+.questions ul {
+  list-style-type: decimal;
+  
+}
+
+.questions li {
+  padding-bottom: 20px;
+}
+
+.questions #list-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.questions .polaroid {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: .9s ease;
+}
+
+.questions span {
+  width: 20%;
+  padding: 0 30px 0 0;
+  font-weight: bolder;
+}
+
+.question label{
+  padding: 10px 30px 10px 0;
+}
+
+.questions .btn{
+  padding: 15px 15px 15px 15px;
+  border-color: black;
+  border-width: 0;
+  border-radius: 8px;
+  background-color: #0fb900;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.questions .btn:hover{
+  background-color: #0c8b00;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+.wrapper{
+  width: 100%;
+}
+
+  [class*="polaroid"] {
+      background-color: #f7bdbd;
+      margin-left: 0;
+      width: 90%;
+  }
+
+  .questions form {
+      width: 90%;
+  }
+}

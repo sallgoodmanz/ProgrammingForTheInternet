@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!DOCTYPE root [
+<!ELEMENT root (logo,table)>
+<!ELEMENT logo (logo-text)>
+
+<!ELEMENT table (row-prices+)>
+<!ELEMENT row-prices (price-col+)>
+
+<!ELEMENT price-col (price-top, price-bottom)>
+<!ATTLIST price-col id ID #REQUIRED>
+
+<!ELEMENT price-top (price_l_name, price_coast, price_coast_description, price_l_description)>
+<!ELEMENT price-bottom (price-row+)>
+
+<!ELEMENT price-row (row-name, row-value)>
+
+
+<!ELEMENT logo-text (#PCDATA)>
+<!ELEMENT row-name (#PCDATA)>
+<!ELEMENT row-value (#PCDATA)>
+
+<!ELEMENT price_l_name (#PCDATA)>
+<!ELEMENT price_coast (#PCDATA)>
+<!ELEMENT price_coast_description (#PCDATA)>
+<!ELEMENT price_l_description (#PCDATA)>
+
+]>
+
+<root>
+    <logo>
+        <logo-text>Lab 2.1 Сайт каршерінгу</logo-text>
+    </logo>
+
+
+    <table>
+        <row-prices>
+            <price-col id="r1">
+                <price-top>
+                    <price_l_name>Хвилина + 9 грн/км</price_l_name>
+                    <price_coast>1.35 - 2.2</price_coast>
+                    <price_coast_description>₴/хв</price_coast_description>
+                    <price_l_description>Найкраще підходить для коротких поїздок, менше
+                        однієї години</price_l_description>
+                </price-top>
+                <price-bottom>
+                    <price-row>
+                        <row-name>Включений пробіг</row-name>
+                        <row-value>0 км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Бронювання</row-name>
+                        <row-value>0 ₴/20хв</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Очікування</row-name>
+                        <row-value>1 ₴</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Понад пробігу</row-name>
+                        <row-value>9 ₴/за кожний км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Супер страховка</row-name>
+                        <row-value>0.8 ₴</row-value>
+                    </price-row>
+                </price-bottom>
+            </price-col>
+
+            <price-col id="r2">
+                <price-top>
+                    <price_l_name>Година + 10 км</price_l_name>
+                    <price_coast>140 - 175</price_coast>
+                    <price_coast_description>₴/хв</price_coast_description>
+                    <price_l_description>
+                        Тариф для поїздок містом на декілька годин, відмінно використати при першому
+                        знайомстві
+                        з послугою
+                    </price_l_description>
+                </price-top>
+                <price-bottom>
+                    <price-row>
+                        <row-name>Включений пробіг</row-name>
+                        <row-value>10 км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Бронювання</row-name>
+                        <row-value>0 ₴/20хв</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Очікування</row-name>
+                        <row-value>0 ₴</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Понад пробігу</row-name>
+                        <row-value>9 ₴/за кожний км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Супер страховка</row-name>
+                        <row-value>25 - 30 ₴</row-value>
+                    </price-row>
+                </price-bottom>
+            </price-col>
+
+            <price-col id="r3">
+                <price-top>
+                    <price_l_name>Добовий + 100 км</price_l_name>
+                    <price_coast>1350 - 1650 ₴</price_coast>
+                    <price_coast_description>₴/хв</price_coast_description>
+                    <price_l_description>
+                        Для комфортної оренди авто на 24 години, чи на довший період
+                    </price_l_description>
+                </price-top>
+                <price-bottom>
+                    <price-row>
+                        <row-name>Включений пробіг</row-name>
+                        <row-value>100 км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Бронювання</row-name>
+                        <row-value>0 ₴/20хв</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Очікування</row-name>
+                        <row-value>0 ₴</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Понад пробігу</row-name>
+                        <row-value>9 ₴/за кожний км</row-value>
+                    </price-row>
+                    <price-row>
+                        <row-name>Супер страховка</row-name>
+                        <row-value>200 - 300 ₴</row-value>
+                    </price-row>
+                </price-bottom>
+            </price-col>
+
+        </row-prices>
+
+    </table>
+</root>

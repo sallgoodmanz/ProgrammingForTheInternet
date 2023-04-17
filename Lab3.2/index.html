@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div#logo {
+      background-image: url('../img/nau_logo.jpg');
+      height: 100px;
+      text-align: center;
+      border: #111;
+      border-width: 10px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+    div#logo h1 {
+      margin-left: 50px;
+      text-align: left;
+      line-height: 65px;
+    }
+
+    .btn {
+      height: 50px;
+      width: 125px;
+      float: left;
+      margin: 25px 0 25px 25px;
+    }
+
+    #quizz{
+      
+      display: none;
+    }
+
+    .quiz {
+      margin: 0 auto 0 auto;
+      padding: 20px;
+      height: 200px;
+      width: 300px;
+      background-color: #fcff30;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    #question {
+      margin: 0 auto 0 auto;
+    }
+
+    .btnAn {
+      height: 40px;
+      width: 85px;
+      bottom: 15px;
+      position: absolute;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    .bntTrue {
+      left: 15px;
+      background-color: #4CAF50;
+    }
+
+    .bntFalse {
+      right: 15px;
+      background-color: #f44336;
+    }
+
+    .btnAn:hover {
+      opacity: 0.7;
+    }
+
+    #myProgress {
+      width: 100%;
+      background-color: #ddd;
+      margin-bottom: 10px;
+      border-radius: 7px;
+    }
+
+    #bar {
+      border-radius: 7px;
+      width: 0%;
+      height: 30px;
+      background-color: #04AA6D;
+      line-height: 30px;
+      color: rgb(0, 0, 0);
+    }
+  </style>
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <script>
+    blinking("blinking");
+    var array = new Array();
+
+
+    array.push("'&'; Побітове 'АБО'; Повертає число, результат побітового порівняння 'АБО'", false);
+    array.push("'|'; Побітове 'І'; Повертає число, результат побітового порівняння.", false);
+    array.push("'~'; Побітове 'НЕ'; Повертає число, з бітами, розташованими в зворотному порядку.", true);
+    array.push("'<<'; 'Зсув вліво'; Зсовує перший операнд вліво на число розрядів, заданих другим операндом. Праві біти, що звільняються, заповнюються нулями ", true);
+    array.push("'>>'; 'Зсув вправо'; Зсовує перший операнд вправо на число розрядів, заданих другим операндом. Ліві біти, що звільняються, відкидаються ", true);
+    array.push("'>>>'; 'Повний зсув вправо' Зсовує перший операнд вправо на число розрядів, заданих другим операндом. Ліві біти, що звільняються, заповнюються нулями", true);
+
+    var quiz = new Quiz();
+    quiz.setQuestion(array);
+
+
+  </script>
+
+  <title>Lab3.2</title>
+</head>
+
+<body>
+  <div id="logo">
+    <h1>Lab 3.2 Сайт каршерінгу</h1>
+  </div>
+
+  <div style="float: left;">
+    <button class="btn" onclick="showArrayContent(['перше']);">Одне слово</button>
+    <button class="btn" onclick="showArrayContent(['перше', 'друге']);">Два слова</button>
+    <button class="btn" onclick="showArrayContent(['перше', 'друге', 'трете']);">Три слова</button>
+    <button class="btn" onclick="showArrayContent(['перше', 'друге', 'трете', 'чотири']);">Чотири слова</button>
+  </div>
+
+  <div style="clear: both;">
+    <button class="btn" onclick="quiz.start()">Завдання 2</button>
+  </div>
+
+  <div style="clear: both; margin-left: 50px;">
+    <h1 id="blinking" style="position: absolute;">Lab 3.2</h1>
+  </div>
+
+  <div id="quizz" class="quiz">
+    <div id="myProgress">
+      <div id="bar">0</div>
+    </div>
+    <div id="question">question</div>
+    <button class="btnAn bntTrue" onclick="quiz.answer(true)">Так</button>
+    <button class="btnAn bntFalse" onclick="quiz.answer(false)">Ні</button>
+  </div>
+
+</body>
+
+</html>

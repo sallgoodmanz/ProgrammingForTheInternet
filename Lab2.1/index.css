@@ -1,0 +1,112 @@
+root {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+logo {
+    background-image: url('../img/nau_logo.jpg');
+    height: 100px;
+    text-align: center;
+    border: #111;
+    border-width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: block;
+}
+
+logo-text {
+    float: left;
+    margin-left: 50px;
+    font-size: 32px;
+    line-height: 107px;
+    font-weight: bold;
+
+}
+
+
+
+price-top {
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+ 
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+    display: block;
+    padding: 10px;
+}
+
+price_l_name,  price_l_description {
+    display: block;
+    margin: 20px 0 20px 0;
+  }
+
+row-prices {
+    margin: 50px auto 150px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 55%;
+}
+
+price-col {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    transition: all 0.3s;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+price-col:hover {
+    transform: translateY(-15px);
+    opacity: 0.9;
+}
+
+#r1 {
+    background-color: #ee2c76;
+}
+
+#r2 {
+    background-color: #ee532c;
+}
+
+#r3 {
+    background-color: #ee2c2c;
+}
+
+
+
+price-bottom {
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+}
+
+price-row {
+    margin: 20px 0 10px 0;
+    text-align:left;
+}
+
+price-row * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 10px 0;
+    color:black;
+}
+
+row-name {
+    width: 55%;
+}
+
+row-value {
+    width: 35%;
+}
